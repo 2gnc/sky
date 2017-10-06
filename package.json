@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/2gnc/sky/issues"
   },
-  "homepage": "https://github.com/2gnc/sky#readme"
+  "homepage": "https://github.com/2gnc/sky#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
