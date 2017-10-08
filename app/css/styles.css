@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  width: 100vw;
+  height: 18vw;
+  border: 1px solid transparent;
+  background-color: black;
+  background: -webkit-radial-gradient(bottom, ellipse, #1b2735 0%, #090a0f 100%);
+  background: -o-radial-gradient(bottom, ellipse, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); }
+
+.sky {
+  height: 100%;
+  position: relative; }
+
+.star {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: white;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear; }
+  .star:hover {
+    -webkit-box-shadow: 0 0 5px 2px white;
+    box-shadow: 0 0 5px 2px white; }
+
+.main {
+  background-color: #090a0f;
+  background: -webkit-radial-gradient(top, ellipse, #1b2735 0%, #090a0f 100%);
+  background: -o-radial-gradient(top, ellipse, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+  height: 85vh;
+  margin-top: -1px; }
