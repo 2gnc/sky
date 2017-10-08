@@ -1,5 +1,15 @@
 'use strict';
 
+(function(){
+	document.querySelector( '.lang-toggle__line-box' ).addEventListener( 'click', function(){
+		document.querySelector( '.lang-toggle__dot' ).classList.toggle( 'lang-toggle__dot--en' )
+	})
+
+
+})();
+
+
+
 (function() {
 /**
  * Creates a new SpaceObj.
@@ -87,3 +97,6 @@
 })();
 
 
+// добавить рандомное отображение технологий
+// переделать рендер на canvas
+// сделать генератор созвездий (по количеству букв в заголовке секции)

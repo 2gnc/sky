@@ -46,7 +46,7 @@ $textcolor: white
 		justify-content: center
 		align-items: center
 		margin-bottom: 1em
-		transition: 0.5s linear
+		transition: 0.3s ease-out
 		&:hover
 			cursor: pointer
 			transform: translateX(-1em)
@@ -62,6 +62,8 @@ $textcolor: white
 	&__lang
 		letter-spacing: 0.3em
 		text-align: center
+		&:hover
+			cursor: default
 	&__line-box
 		padding: 0.5em 0
 		text-align: center
@@ -77,20 +79,19 @@ $textcolor: white
 		border-radius: 50%
 		background-color: $textcolor
 		position: absolute
-		top: 50%
+		top: 75%
 		left: 50%
 		transform: translate(-50%, -50%)
 		transition: 0.5s linear
-		&--up
+		&--en
 			top: 25%
-		&--down
-			top: 75%
 .main
 	background-color: #090a0f
 	background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%)
 	width: 100vw
 	height: 80vh
 	margin-top: -1px
+	padding-top: 1em
 
 .section
 	width: 80vw
