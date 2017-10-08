@@ -5,8 +5,38 @@ head
 	title Ksenia`s site
 	link(rel='stylesheet' href='css/styles.css')
 	link(rel='stylesheet' href='css/stars.css')
+	script(src='https://use.fontawesome.com/65e9221680.js')
 body
 	header.header
+	aside
+		nav.nav
+			.nav__item.nav__item--lang-toggle
+				.lang-toggle
+					.lang-toggle__lang EN
+					.lang-toggle__line-box
+						.lang-toggle__line
+						.lang-toggle__dot.lang-toggle__dot--up
+					.lang-toggle__lang RU
+			a(class='nav__item' href="#")
+				i(class="fa fa-info fa-2x" aria-hidden="true")
+			a(class='nav__item' href="#")
+				i(class="fa fa-file-code-o fa-2x" aria-hidden="true")
+			a(class='nav__item' href="#")
+				i(class="fa fa-cogs fa-2x" aria-hidden="true")
+			a(class='nav__item' href="#")
+				i(class="fa fa-graduation-cap fa-2x" aria-hidden="true")
+			a(class='nav__item' href="#")
+				i(class="fa fa-phone fa-2x" aria-hidden="true")
 	main.main
+		section.section#about
+			h1.section__heading About me
+		section.section#portfolio
+			h1.section__heading Portfolio
+		section.section#skills
+			h1.section__heading Skills
+		section.section#education
+			h1.section__heading Education
+		section.section#contacts
+			h1.section__heading Contacts
 	script(src='js/scripts.js')
 	

@@ -1,16 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz')
+$textcolor: white
+
 *
 	margin: 0
 	padding: 0
 
 .header
+	box-sizing: border-box
 	width: 100vw
-	height: 18vw
+	height: 20vh
 	border: 1px solid transparent
 	background-color: black
 	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)
 
 .sky
 	height: 100%
+	width: 100%
 	position: relative
 
 .star
@@ -21,9 +26,79 @@
 	transition: 0.5s linear
 	&:hover
 		box-shadow: 0 0 5px 2px white
-
+.nav
+	position: fixed
+	top: 30%
+	right: 3em
+	padding: 1em 0
+	font-family: 'Yanone Kaffeesatz', sans-serif
+	z-index: 5
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__item
+		color: $textcolor
+		text-decoration: none
+		outline: 1px solid white
+		min-width: 4em
+		min-height: 4em
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 1em
+		transition: 0.5s linear
+		&:hover
+			cursor: pointer
+			transform: translateX(-1em)
+		&--lang-toggle
+			outline: none
+			&:hover
+				cursor: pointer
+				transform: translateX(0)
+.lang-toggle
+	display: flex-direction
+	flex-direction: column
+	align-items: stretch
+	&__lang
+		letter-spacing: 0.3em
+		text-align: center
+	&__line-box
+		padding: 0.5em 0
+		text-align: center
+		position: relative
+	&__line
+		height: 2.5em
+		width: 2px
+		background-color: $textcolor
+		display: inline-block
+	&__dot
+		width: 1em
+		height: 1em
+		border-radius: 50%
+		background-color: $textcolor
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		transition: 0.5s linear
+		&--up
+			top: 25%
+		&--down
+			top: 75%
 .main
 	background-color: #090a0f
 	background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%)
-	height: 85vh
+	width: 100vw
+	height: 80vh
 	margin-top: -1px
+
+.section
+	width: 80vw
+	margin: 0 auto
+	&__heading
+		color: $textcolor
+		display: block
+		text-align: center
+		text-transform: uppercase
+		font-family: 'Yanone Kaffeesatz', sans-serif
+		letter-spacing: 0.3em
