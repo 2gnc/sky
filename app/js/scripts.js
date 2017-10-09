@@ -10,6 +10,7 @@
 
 
 
+
 (function() {
 /**
  * Creates a new SpaceObj.

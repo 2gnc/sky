@@ -1,0 +1,29 @@
+.nav
+	position: fixed
+	top: 30%
+	right: 3em
+	padding: 1em 0
+	font-family: 'Yanone Kaffeesatz', sans-serif
+	z-index: 5
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__item
+		color: $textcolor
+		text-decoration: none
+		outline: 1px solid white
+		min-width: 4em
+		min-height: 4em
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 1em
+		transition: 0.3s ease-out
+		&:hover
+			cursor: pointer
+			transform: translateX(-1em)
+		&--lang-toggle
+			outline: none
+			&:hover
+				cursor: pointer
+				transform: translateX(0)

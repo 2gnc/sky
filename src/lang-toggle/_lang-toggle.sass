@@ -1,0 +1,30 @@
+.lang-toggle
+	display: flex-direction
+	flex-direction: column
+	align-items: stretch
+	&__lang
+		letter-spacing: 0.3em
+		text-align: center
+		&:hover
+			cursor: default
+	&__line-box
+		padding: 0.5em 0
+		text-align: center
+		position: relative
+	&__line
+		height: 2.5em
+		width: 2px
+		background-color: $textcolor
+		display: inline-block
+	&__dot
+		width: 1em
+		height: 1em
+		border-radius: 50%
+		background-color: $textcolor
+		position: absolute
+		top: 75%
+		left: 50%
+		transform: translate(-50%, -50%)
+		transition: 0.5s linear
+		&--en
+			top: 25%
